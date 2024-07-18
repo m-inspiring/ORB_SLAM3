@@ -388,3 +388,8 @@ if(realsense2_FOUND)
             Examples_old/Stereo-Inertial/stereo_inertial_realsense_D435i.cc)
     target_link_libraries(stereo_inertial_realsense_D435i_old ${PROJECT_NAME})
 endif()
+
+add_executable(mono_webcam
+	Examples/Monocular/mono_webcam.cc)
+
+target_link_libraries(mono_webcam ${PROJECT_NAME})
