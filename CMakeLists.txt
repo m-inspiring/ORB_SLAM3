@@ -30,9 +30,6 @@ endif()
 
 LIST(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
 
-MESSAGE("OPENCV VERSION:")
-MESSAGE(${OpenCV_VERSION})
-
 find_package(Eigen3 3.1.0 REQUIRED)
 find_package(Pangolin REQUIRED)
 find_package(realsense2)
