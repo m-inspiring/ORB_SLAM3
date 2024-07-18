@@ -392,4 +392,4 @@ endif()
 add_executable(mono_webcam
 	Examples/Monocular/mono_webcam.cc)
 
-target_link_libraries(mono_webcam ${PROJECT_NAME})
+target_link_libraries(mono_webcam ${PROJECT_NAME} -ldl ${EGL_LIBRARIES} ${GLES_LIBRARIES})
